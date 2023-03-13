@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data=pd.read_csv("liquor_sales_FinalAssignment1.csv")
+data=pd.read_csv("liquor_sales_FinalAssignment.csv")
 
 x=data.groupby(["zip_code","item_description"]).bottles_sold.max()
 print("Most Famous Item per Zip Code\n==============================\n")
